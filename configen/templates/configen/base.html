@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <title>config builder</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <script type="text/javascript" src="{% static 'js/sidebar.js' %}"></script>
+    </head>
+
+    <body>
+        <div class='page-header'>
+        <h2><a href=""></a>CISCO TEMPLATE BUILDER
+        </div>
+
+    <div id= 'sidebar'>
+        <div class='toggle-btn' onclick="toggleSidebar()">
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+        <ul>
+            <li><a href='/dhcp'>DHCP CONFIG TEMPLATE</a></li>
+            <li><a href='/addip'>ADDITIONAL IP ADDRESS </a></li>
+        </ul>
+    </div>
+
+        <div class='content-container'>
+            <!-- <a href='/dhcp'>DHCP CONFIG TEMPLATE</a><br>
+            <a href='/addip'>ADDITIONAL IP ADDRESS </a> -->
+
+            {% block content %}
+            {% endblock %}
+        
+        </div>
+    
+    
+
+    </body>
+
+</html>

@@ -1,0 +1,88 @@
+body{
+    background-color: f4f4f4;
+    color: #555555;
+    padding-left:15px;
+
+    font-family: 'Roboto Slab', serif;
+    font-size: 14px;
+    font-weight: normal;
+    /* Same as above */
+    font: normal Arial, Helvetica, sans-serif;
+
+    line-height: 1.6em;
+    margin: 0;
+}
+
+.button{
+    background-color: #333333;
+    color:#fff;
+    padding:10px 15px;
+    border: none;
+}
+
+.button:hover{
+    background-color: red;
+    color:#fff;
+}
+
+.clr{
+    clear: both;
+}
+
+.page-header {
+    background-color: #333;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+
+h1 , h2  {
+    color: #ffffff;
+    font-family: 'Roboto Slab', serif;
+    
+}
+
+#sidebar {
+    position:fixed;
+    width: 250px;
+    height: 100%;
+    background:#333 ;
+    left: -250px;
+    transition: all 500ms linear;
+    
+
+}
+
+#sidebar.active {
+    left:0px;
+
+}
+
+li a{
+    color:white;
+}
+
+#sidebar ul li {
+    color:rgba(230,230,230,0.9);
+    list-style: none;
+    padding:15px 10px;
+    border-bottom:1px solid rgba(100, 100, 100, 0.3);
+
+}
+
+#sidebar .toggle-btn{
+    position: absolute;
+    left:260px;
+    top: 5px;
+
+}
+
+#sidebar .toggle-btn span{
+    display: block;
+    width:30px;
+    height: 5px;
+    background: #151719;
+    margin: 5px 0px;
+
+}
+
+

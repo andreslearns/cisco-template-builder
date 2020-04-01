@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+{% extends 'configen/base.html' %}
+<html>
+    <head>
+        <!-- <h4>DHCP CONFIG GENERATOR</h4> -->
+    </head>
+
+    <body>
+        {% block content %}
+
+        <form class="form-horizontal">
+            <fieldset>
+            
+            <!-- Form Name -->
+            <legend></legend>
+
+            
+            
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="ipaddress"></label>  
+              <div class="col-md-2">
+              <input id="ipaddress" name="ipaddress" type="text" placeholder="Public IP Address " class="form-control input-md" required="">
+              <span class="help-block">CIDR Format eg: 113.61.52.0/24</span>  
+              </div>
+            </div>
+            
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="office_name"></label>  
+              <div class="col-md-2">
+              <input id="office_name" name="office_name" type="text" placeholder="Office Name" class="form-control input-md" required="">
+              <span class="help-block">Will be assigned as dhcp pool name</span>  
+              </div>
+            </div>
+            
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="vlanx"></label>  
+              <div class="col-md-2">
+              <input id="vlanx" name="vlanx" type="text" placeholder="Start Vlan" class="form-control input-md" required="">
+              <span class="help-block">Starting Vlan 1-254</span>  
+              </div>
+            </div>
+            
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="vlany"></label>  
+              <div class="col-md-2">
+              <input id="vlany" name="vlany" type="text" placeholder="End Vlan" class="form-control input-md" required="">
+              <span class="help-block">Ending Vlan 1-254</span>  
+              </div>
+            </div>
+            
+            <!-- Button -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="generate"></label>
+              <div class="col-md-4">
+                <button id="generate" name="generate" class="btn btn-primary">Generate</button>
+              </div>
+            </div>
+            
+            </fieldset>
+            </form>
+            
+
+        {% endblock %}
+
+
+
+
+
+    </body>
+
+</html>
